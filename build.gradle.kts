@@ -24,8 +24,8 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
-//    // h2 DB https://mvnrepository.com/artifact/com.h2database/h2
-//    implementation("com.h2database:h2:2.1.214")
+    // h2 DB https://mvnrepository.com/artifact/com.h2database/h2
+    implementation("com.h2database:h2:2.1.214")
 
     // Swagger / OpenAPI
     implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
