@@ -7,6 +7,7 @@ import jakarta.persistence.JoinColumn
 import jakarta.persistence.ManyToOne
 import jakarta.persistence.Table
 import test.develop.config.IdGenerator
+import java.time.LocalDateTime
 
 @Entity
 @Table(name = "product")
@@ -18,5 +19,7 @@ class Product(
     val description: String,
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "region_id")
-    val region: Region
+    val region: Region,
+    val createdAt: LocalDateTime = LocalDateTime.now(),
+    val updatedAt: LocalDateTime = LocalDateTime.now()
 )
