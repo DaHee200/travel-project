@@ -1,9 +1,10 @@
+import org.springframework.boot.gradle.tasks.bundling.BootJar
+
 plugins {
-    id("java")
+    kotlin("jvm")
 }
-dependencies {
-    implementation(project(":controller"))
-    implementation(project(":usecase"))
-    implementation(project(":gateway"))
-    implementation(project(":model"))
-}
+
+val jar: Jar by tasks
+val bootJar: BootJar by tasks
+bootJar.enabled = false
+jar.enabled = true
