@@ -6,7 +6,7 @@ bootJar.enabled = false
 jar.enabled = true
 
 dependencies {
-    implementation(project(":model"))
+    implementation(project(":domain"))
 
     // h2 DB https://mvnrepository.com/artifact/com.h2database/h2
     implementation("com.h2database:h2:2.1.214")

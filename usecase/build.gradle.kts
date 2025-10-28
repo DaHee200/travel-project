@@ -8,5 +8,5 @@ jar.enabled = true
 
 dependencies {
     implementation(project(":gateway"))
-    implementation(project(":model"))
+    implementation(project(":domain"))
 }
