@@ -1,9 +1,9 @@
-package test.develop.app
+package test.develop.app.com.example.travel
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = ["com.example.travel"])
 class TravelProjectKotlinApplication
 
 fun main(args: Array<String>) {
