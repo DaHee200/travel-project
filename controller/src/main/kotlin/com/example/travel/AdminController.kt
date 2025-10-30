@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*
 @RestController
 @RequestMapping("admins")
 @Tag(name = "관리자 관련 API")
-class adminController {
+class AdminController {
 
     @Operation(summary = "관리자 등록")
     @PostMapping
